@@ -2,8 +2,8 @@
 Exam 3, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Gerardo Santana.  October, 2018.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
 import time
@@ -223,8 +223,14 @@ def problem3(seq_of_seq):
       :type seq_of_seq: list of list of int
       :rtype: (list of int) | int
     """
+    for k in range(len(seq_of_seq)):
+        b = seq_of_seq[k]
+        for j in range(len(b)):
+            if is_prime(b[j]) is True:
+                return b
+    return -1
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
 
